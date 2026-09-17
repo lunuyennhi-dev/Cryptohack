@@ -1,0 +1,44 @@
+# [Tên_Thách_Đố / Challenge Name]
+
+- **Category:** (Crypto / Web / Pwn / Reverse / Forensics / Misc)
+- **Points:** [Số điểm]
+- **Event:** [Tên giải đấu CTF]
+- **Author:** [Tên tác giả đề bài]
+
+---
+
+## 1. Description (Mô tả đề bài)
+> *Dán phần mô tả, câu hỏi hoặc file đính kèm của đề bài vào đây.*
+
+- **Files provided:** `chal.py`, `output.txt` (nếu có)
+- **Remote:** `nc challenge.ctf.org 1337` (nếu có)
+
+---
+
+## 2. Analysis (Phân tích)
+*Tóm tắt ngắn gọn tư duy và hướng tiếp cận bài toán:*
+
+* **Mục tiêu:** [Cần tìm flag/mật mã/lỗ hổng gì?]
+* **Kiến thức liên quan:** [Thuật toán, lỗ hổng hoặc khái niệm toán học chính sử dụng]
+* **Điểm đáng chú ý trong code/đề bài:**
+  * Điểm 1: ...
+  * Điểm 2: ...
+
+---
+
+## 3. Solution / Exploitation (Cách giải)
+
+### Bước 1: [Tên bước 1, ví dụ: Phân tích file mã nguồn]
+[Giải thích ngắn gọn]
+
+### Bước 2: [Tên bước 2, ví dụ: Lập công thức toán / Tìm lỗ hổng]
+[Giải thích logic hoặc công thức toán]
+
+### Bước 3: [Viết script giải - Solver Script]
+
+```python
+#!/usr/bin/env python3
+# Script khai thác / giải mã
+from pwn import *
+
+# Code solver của cậu ở đây...
