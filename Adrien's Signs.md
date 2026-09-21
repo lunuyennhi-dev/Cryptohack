@@ -6,7 +6,7 @@
 
 ---
 
-## 📖 1. Prerequisites & Mathematical Properties (Kiến thức nền tảng)
+## 1. Prerequisites & Mathematical Properties (Kiến thức nền tảng)
 
 Để giải bài này, ta cần nắm vững các khái niệm cơ bản trong **Lý thuyết số (Number Theory)**:
 
@@ -19,7 +19,7 @@ Cho số nguyên lẻ $p$ và số nguyên $x$ thỏa mãn $\gcd(x, p) = 1$.
 ### 1.2. Ký hiệu Legendre (Legendre Symbol) & Tiêu chuẩn Euler
 Ký hiệu Legendre $\left(\frac{x}{p}\right)$ giúp xác định nhanh $x$ có phải là QR mod $p$ hay không:
 
-$$\left(\frac{x}{p}\right) = x^{\frac{p-1}{2}} \pmod p \equiv \begin{cases} 1 & \text{nếu } x \in \text{QR}_p \\ -1 \ (\equiv p-1) & \text{nếu } x \in \text{QNR}_p \end{cases}$$
+$$\left(\frac{x}{p}\right) \equiv x^{\frac{p-1}{2}} \equiv \begin{cases} 1 & \text{nếu } x \in \text{QR}_p \\\\ -1 \ (\equiv p-1) & \text{nếu } x \in \text{QNR}_p \end{cases} \pmod p$$
 
 ### 1.3. Tính chất nhân của Ký hiệu Legendre (Multiplicative Property)
 Ký hiệu Legendre có tính chất nhân:
@@ -30,7 +30,7 @@ $$\left(\frac{-1}{p}\right) = (-1)^{\frac{p-1}{2}} = -1$$
 
 ---
 
-## 📌 2. Challenge Overview
+## 2. Challenge Overview
 
 Mã nguồn `chall.py` mã hóa từng bit của `FLAG` theo quy trình:
 1. Chuyển `FLAG` thành chuỗi bit nhị phân $b \in \{'0', '1'\}$.
@@ -68,7 +68,7 @@ print(encrypt_flag(FLAG))
 
 ---
 
-## 🔍 3. Vulnerability Analysis & Proof (Phân tích Lỗ hổng)
+##  3. Vulnerability Analysis & Proof (Phân tích Lỗ hổng)
 
 Ta tiến hành kiểm tra hai tham số $p$ và $a$ cho sẵn:
 
@@ -92,7 +92,7 @@ $$\left(\frac{n}{p}\right) = \left(\frac{a^e}{p}\right) = \left(\frac{a}{p}\righ
 
 ---
 
-## 🚀 4. Exploit Script
+##  4. Exploit Script
 
 ```python
 #!/usr/bin/env python3
