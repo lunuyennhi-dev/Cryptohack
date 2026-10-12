@@ -116,8 +116,3 @@ print(f"[+] Flag: {flag_bytes.decode()}")
 > Tiêu chuẩn Euler cho phép tính Ký hiệu Legendre trong thời gian $O(\log p)$ nhờ giải thuật bình phương và nhân (Exponentiation by squaring), giúp script giải hoàn tất gần như ngay lập tức.
 
 ---
-
-## 🎯 5. Takeaways & Conclusion
-
-- Không phải lúc nào bài toán dạng $a^e \pmod p$ cũng bắt buộc phải giải **Logarithm rời rạc (DLP)**.
-- Luôn kiểm tra các tính chất toán học của tham số ($p \pmod 4$, Legendre Symbol, Jacobi Symbol) khi gặp các phép toán điều kiện biến đổi số phức tạp.
