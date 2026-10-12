@@ -111,8 +111,3 @@ for c in ciphertext:
 flag_bytes = int(bits, 2).to_bytes(len(bits) // 8, byteorder="big")
 print(f"[+] Flag: {flag_bytes.decode()}")
 ```
-
-> [!TIP]
-> Tiêu chuẩn Euler cho phép tính Ký hiệu Legendre trong thời gian $O(\log p)$ nhờ giải thuật bình phương và nhân (Exponentiation by squaring), giúp script giải hoàn tất gần như ngay lập tức.
-
----
