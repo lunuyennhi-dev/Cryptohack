@@ -1,12 +1,5 @@
-# [Crypto] Quadratic Residue Leak — CTF Write-up
 
-![Category](https://img.shields.io/badge/Category-Crypto-blue)
-![Topic](https://img.shields.io/badge/Topic-Number_Theory-purple)
-![Difficulty](https://img.shields.io/badge/Difficulty-Easy--Medium-green)
-
----
-
-## 1. Prerequisites & Mathematical Properties (Kiến thức nền tảng)
+## 1. Kiến thức nền tảng
 
 Để giải bài này, ta cần nắm vững các khái niệm cơ bản trong **Lý thuyết số (Number Theory)**:
 
@@ -68,7 +61,7 @@ print(encrypt_flag(FLAG))
 
 ---
 
-##  3. Vulnerability Analysis & Proof (Phân tích Lỗ hổng)
+##  3. Phân tích Lỗ hổng
 
 Ta tiến hành kiểm tra hai tham số $p$ và $a$ cho sẵn:
 
@@ -92,7 +85,7 @@ $$\left(\frac{n}{p}\right) = \left(\frac{a^e}{p}\right) = \left(\frac{a}{p}\righ
 
 ---
 
-##  4. Exploit Script
+##  4.Script
 
 ```python
 #!/usr/bin/env python3
